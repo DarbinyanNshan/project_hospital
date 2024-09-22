@@ -1,0 +1,323 @@
+.slider-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.home {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -9%);
+    z-index: 10;
+    width: 100%;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: normal;
+}
+
+.homeOne {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    width: 100%;
+}
+
+.homeOne>div {
+    margin: 0 2rem;
+    width: 330px;
+    height: 320px;
+    background-color: var(--main-color);
+    padding: 45px 35px;
+    transition: transform 0.3s ease;
+}
+
+.homeOne>div:hover {
+    transform: translateY(-20px);
+    background-color: var(--secound-bg-color);
+}
+
+.homeOne>div:hover .homeOne_icon {
+    color: var(--main-color);
+}
+
+.homeOne>div:hover h3 {
+    color: var(--main-color);
+}
+
+.homeOne>div:hover p {
+    color: var(--main-color);
+}
+
+.homeOne>div .homeOne_icon {
+    font-size: 2.5rem;
+    color: var(--secound-bg-color);
+}
+
+.homeOne>div h3 {
+    font-size: 2rem;
+    color: var(--title-color);
+    margin: 0.5rem 0;
+}
+
+.homeOne>div p {
+    font-size: 1rem;
+    margin: 1rem 0;
+    color: var(--text-color);
+}
+
+.image-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../../assets/images/home/bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5rem 0;
+    padding: 5rem 10rem;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-1 {
+    margin-bottom: 20px;
+}
+
+.img-2 {
+    width: 70%;
+    position: absolute;
+    bottom: 0;
+    left: -50px;
+}
+
+.img-3 {
+    width: 45%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.image-content {
+    text-align: left;
+    padding: 20px;
+}
+
+.image-content h1 {
+    color: var(--title-color);
+    font-size: 2.5rem;
+    width: 800px;
+    margin: 10px 0;
+}
+
+.image-content h2 {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: var(--text-color);
+}
+
+.image-content svg {
+    color: var(--secound-bg-color);
+}
+
+.image-content p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: var(--text-color);
+    margin: 1rem 0;
+}
+
+.image-content button {
+    font-size: 1rem;
+    background-color: var(--secound-bg-color);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    white-space: nowrap;
+    font-family: "Roboto Condensed", sans-serif;
+    border: none;
+    margin: 0.5rem;
+    color: var(--main-color);
+}
+
+.image-content button:hover {
+    color: var(--secound-bg-color);
+    background-color: var(--main-color);
+    cursor: pointer;
+    border: 1px solid red;
+    border-color: var(--secound-bg-color);
+    transition: 1s ease-in-out;
+
+}
+
+@media (max-width: 1250px) {
+    .homeOne>div {
+        width: 280px;
+        padding: 30px 25px;
+        margin: 1rem 2rem;
+    }
+
+    .image-section {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    .image-content svg {
+        display: none;
+    }
+
+    .home {
+        transform: translate(-50%, 0);
+
+    }
+}
+
+
+
+@media (max-width: 950px) {
+    .image-content svg {
+        text-align: center;
+    }
+
+    .homeOne {
+        flex-wrap: wrap;
+        margin: 5rem 0;
+    }
+
+    .homeOne>div>h3 {
+        font-size: 1.7rem;
+    }
+
+    .image-content h1 {
+        font-size: 1.7em;
+        width: auto;
+    }
+
+    .image-content h2 {
+        font-size: 1.5em;
+    }
+
+    .image-content p {
+        font-size: 1.2rem;
+    }
+
+    .image-section {
+        padding: 0;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    .image-content {
+        padding: 4px;
+    }
+
+    .img-1 {
+        width: 100%;
+    }
+
+    .img-2,
+    .img-3 {
+        width: 50%;
+    }
+
+    .img-2 {
+        left: 5px;
+    }
+
+    .img-3 {
+        right: 0px;
+    }
+}
+
+@media (max-width: 550px) {
+    .img-1 {
+        width: 100%;
+    }
+
+    .img-2,
+    .img-3 {
+        width: 50%;
+    }
+
+    .img-2 {
+        left: 5px;
+    }
+
+    .img-3 {
+        right: 0px;
+    }
+
+
+    .image-content {
+        text-align: left;
+    }
+
+    .image-content button {
+        margin: 1rem auto;
+    }
+
+    .image-section {
+        padding: 0 1rem;
+    }
+}
+
+
+/* //////////////////////////////////////Handle Scroll///////////////////////////////////////////////// */
+.in_view1 {
+    opacity: 1;
+    animation: fadeInTop 3s;
+}
+
+@keyframes fadeInTop {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.in_view2 {
+    opacity: 1;
+    transform: translateX(-20px);
+    animation: fadeInLeft 2s forwards;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.in_view3 {
+    opacity: 1;
+    animation: fadeInRight 2s forwards;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
