@@ -39,5 +39,25 @@
   "recentEvaluationsTitle": "Recent Evaluations",
   "recentEvaluationsDescription": "Recent Evaluations refer to the latest assessments or reviews conducted to measure performance, progress, or outcomes in a specific area.",
   "intensiveCareTitle": "Intensive Care",
-  "intensiveCareDescription": "Intensive Care is a specialized unit in hospitals that provides continuous and closely monitored medical care for critically ill or injured patients."
+  "intensiveCareDescription": "Intensive Care is a specialized unit in hospitals that provides continuous and closely monitored medical care for critically ill or injured patients.",
+  "card": {
+    "title1": "Card 1",
+    "description1": "This is card 1",
+    "title2": "Card 2",
+    "description2": "This is card 2",
+    "title3": "Card 3",
+    "description3": "This is card 3",
+    "title4": "Card 4",
+    "description4": "This is card 4",
+    "title5": "Card 5",
+    "description5": "This is card 5",
+    "title6": "Card 6",
+    "description6": "This is card 6",
+    "title7": "Card 7",
+    "description7": "This is card 7",
+    "title8": "Card 8",
+    "description8": "This is card 8",
+    "title9": "Card 9",
+    "description9": "This is card 9"
+  }
 }

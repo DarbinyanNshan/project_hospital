@@ -107,7 +107,6 @@ export const Home = () => {
             </div>
           </div>
           <ServiceContent />
-
         </div>
       </div>
     </>
