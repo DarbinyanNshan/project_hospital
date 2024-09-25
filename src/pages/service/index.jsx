@@ -12,7 +12,7 @@ export const Service = () => {
             <div className="services_img">
                 <div className="about-text">
                     <h1>{t('services')}</h1>
-                    <h6><span>{t('breadcrumb').split(' / ')[0]}</span> / {t('breadcrumb').split(' / ')[1]}</h6>
+                    <h6><span>{t('home')}</span> / {t('services')}</h6>
                 </div>
             </div>
             <ServiceContent/>

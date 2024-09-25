@@ -85,17 +85,7 @@ export const NavBar = () => {
                     )}
                     <NavLink to="/" onClick={() => setIsOpen(false)}>{t('home')}</NavLink>
                     <NavLink to="/about" onClick={() => setIsOpen(false)}>{t('about')}</NavLink>
-
-                    <div className="dropdown">
-                        <p className={(location.pathname.includes('/doctors')) ? 'active' : ''}>
-                            {t('doctors')}<FaCaretDown />
-                        </p>
-                        <div className="dropdown-content">
-                            <NavLink to="/doctors" onClick={() => setIsOpen(false)}>{t('doctors')}</NavLink>
-                            <NavLink to="/doctors/specialists" onClick={() => setIsOpen(false)}>{t('specialists')}</NavLink>
-                        </div>
-                    </div>
-
+                    <NavLink to="/doctors" onClick={() => setIsOpen(false)}>{t('doctors')}</NavLink>
                     <div className="dropdown">
                         <p className={(location.pathname.includes('/departments')) ? 'active' : ''}>
                             {t('departments')}<FaCaretDown />
