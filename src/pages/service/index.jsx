@@ -9,8 +9,8 @@ export const Service = () => {
 
     return (
         <div className="services">
-            <div className="services_img">
-                <div className="about-text">
+            <div className="services-img">
+                <div className="services-text">
                     <h1>{t('services')}</h1>
                     <h6><span>{t('home')}</span> / {t('services')}</h6>
                 </div>

@@ -2,9 +2,11 @@
   "home": "HOME",
   "about": "ABOUT US",
   "services": "SERVICES",
-  "contact": "CONTACT",
+  "contact": "CONTACT US",
   "doctors": "DOCTORS",
   "departments": "DEPARTMENTS",
+  "departments1": "ԲՈՒԺԱԿԱՆ ՄԱՍ",
+  "administrative": "ՎԱՐՉԱԿԱՆ ՄԱՍ",
   "openingHours": "Mon. - Sat. 09:00-19:00",
   "address": "Yerevan, Hrachya Nersisyan Street, 7/1",
   "specialists": "SPECIALISTS",
@@ -109,6 +111,20 @@
     "profession33": "District Therapist",
     "fullName34": "Kristaporyan Nora",
     "profession34": "District Therapist"
+  },
+  "contact-info": {
+    "addressTitle": "Address",
+    "address": "7/1 Hrachya Nersisyan St, Yerevan",
+    "phoneTitle": "Number",
+    "emailTitle": "Email",
+    "sendMessage": "Send Message",
+    "userFristName": "First Name",
+    "userLastName": "Last Name",
+    "userPhone": "Phone Number",
+    "userEmail": "Email",
+    "userTema": "Subject",
+    "userMessage": "Message",
+    "send": "Send"
   },
   "search": {
     "fullNameInputs": "Search by full name",

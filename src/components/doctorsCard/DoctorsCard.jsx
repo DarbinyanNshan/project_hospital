@@ -43,7 +43,7 @@ import img34 from "../../assets/images/doctors/texTerapevt13.jpg"
 import { MdClear } from "react-icons/md";
 
 
-export const CardContainer = () => {
+export const DoctorsCard = () => {
   const { t } = useTranslation();
   const [fullName, setFullName] = useState("");
   const [profession, setProfession] = useState("");

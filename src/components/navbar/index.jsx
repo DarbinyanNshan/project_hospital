@@ -14,7 +14,6 @@ export const NavBar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [isFixed, setIsFixed] = useState(false);
     const navRef = useRef(null);
-
     const location = useLocation();
 
     useEffect(() => {
@@ -27,7 +26,6 @@ export const NavBar = () => {
         };
 
         window.addEventListener("scroll", handleScroll);
-
         return () => {
             window.removeEventListener("scroll", handleScroll);
         };
@@ -59,6 +57,13 @@ export const NavBar = () => {
         }
     }, [isOpen]);
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth' // Optional: for smooth scrolling
+        });
+    };
+
     return (
         <>
             <div className="info">
@@ -83,25 +88,20 @@ export const NavBar = () => {
                             <IoClose />
                         </div>
                     )}
-                    <NavLink to="/" onClick={() => setIsOpen(false)}>{t('home')}</NavLink>
-                    <NavLink to="/about" onClick={() => setIsOpen(false)}>{t('about')}</NavLink>
-                    <NavLink to="/doctors" onClick={() => setIsOpen(false)}>{t('doctors')}</NavLink>
+                    <NavLink to="/" onClick={() => { setIsOpen(false); scrollToTop(); }}>{t('home')}</NavLink>
+                    <NavLink to="/about" onClick={() => { setIsOpen(false); scrollToTop(); }}>{t('about')}</NavLink>
+                    <NavLink to="/doctors" onClick={() => { setIsOpen(false); scrollToTop(); }}>{t('doctors')}</NavLink>
                     <div className="dropdown">
                         <p className={(location.pathname.includes('/departments')) ? 'active' : ''}>
                             {t('departments')}<FaCaretDown />
                         </p>
                         <div className="dropdown-content">
-                            <NavLink to="/departments" onClick={() => setIsOpen(false)}>{t('departments')}</NavLink>
-                            <NavLink to="/departments/cardiology" onClick={() => setIsOpen(false)}>{t('cardiology')}</NavLink>
-                            <NavLink to="/departments/neurology" onClick={() => setIsOpen(false)}>{t('neurology')}</NavLink>
-                            <NavLink to="/departments/urology" onClick={() => setIsOpen(false)}>{t('urology')}</NavLink>
-                            <NavLink to="/departments/pediatric" onClick={() => setIsOpen(false)}>{t('pediatric')}</NavLink>
-                            <NavLink to="/departments/laboratory" onClick={() => setIsOpen(false)}>{t('laboratory')}</NavLink>
+                            <NavLink to="/departments" onClick={() => { setIsOpen(false); scrollToTop(); }}>{t('departments1')}</NavLink>
+                            <NavLink to="/departments/administrative" onClick={() => { setIsOpen(false); scrollToTop(); }}>{t('administrative')}</NavLink>
                         </div>
                     </div>
-
-                    <NavLink to="/services" onClick={() => setIsOpen(false)}>{t('services')}</NavLink>
-                    <NavLink to="/contact" onClick={() => setIsOpen(false)}>{t('contact')}</NavLink>
+                    <NavLink to="/services" onClick={() => { setIsOpen(false); scrollToTop(); }}>{t('services')}</NavLink>
+                    <NavLink to="/contact" onClick={() => { setIsOpen(false); scrollToTop(); }}>{t('contact')}</NavLink>
                     <LanguageSwitcher setIsOpen={setIsOpen} />
                 </div>
                 {!isOpen && (

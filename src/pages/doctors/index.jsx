@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
-import { CardContainer } from "../../components/cardsContainer/CardContainer";
 import { useTranslation } from "react-i18next";
+import { DoctorsCard } from "../../components/doctorsCard/DoctorsCard";
 
 export const Doctors = () => {
     const { t } = useTranslation();
@@ -9,13 +9,13 @@ export const Doctors = () => {
     return (
         <>
             <div className="doctors">
-            <div className="services_img">
-                <div className="about-text">
+            <div className="doctors-img">
+                <div className="doctors-text">
                     <h1>{t('doctors')}</h1>
                     <h6><span>{t('home')}</span> / {t('doctors')}</h6>
                 </div>
             </div>
-               <CardContainer/>
+               <DoctorsCard/>
             </div>
         </>
     );

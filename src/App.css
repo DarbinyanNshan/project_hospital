@@ -10,3 +10,20 @@
     --title-color: #363636;
     --main-color: #f5f5f5;
 }
+
+::-webkit-scrollbar {
+    width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-color);
+    border-radius: 60vh;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secound-bg-color);
+}

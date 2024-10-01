@@ -1,4 +1,4 @@
-.services_img {
+.services-img {
     background-image: url(../../assets/images/service/service.jpg);
     background-size: cover;
     background-position: center;
@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.about-text {
+.services-text {
     position: absolute;
     right: 10%;
     top: 50%;
@@ -17,17 +17,17 @@
 
 }
 
-.about-text h1 {
+.services-text h1 {
     font-size: 2rem;
     color: var(--secound-bg-color);
 }
 
-.about-text h6 {
+.services-text h6 {
     font-size: 1rem;
     color: var(--title-color);
 }
 @media (max-width: 410px) {
-    .about-text h1{
+    .services-text h1{
         font-size: 1.5rem;
     }
 }

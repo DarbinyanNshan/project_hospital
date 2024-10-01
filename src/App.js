@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import './App.css';
-// import LoadingPage from './components/loading';
 import { Router } from './layouts/router';
 import "./i18n";
 import LoadingComponent from './components/loading';
+import BackToTopButton from './components/backToButton';
+import { Footer } from './components/footer';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       ) : (
         <div>
           <Router />
+          <BackToTopButton/>
         </div>
       )}
     </div>

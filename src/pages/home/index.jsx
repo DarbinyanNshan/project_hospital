@@ -13,6 +13,7 @@ import img_3 from "../../assets/images/home/image3.jpg";
 
 import { useNavigate } from "react-router-dom";
 import { ServiceContent } from "../../components/servicesContent";
+import { ContactContent } from "../../components/contactContent";
 
 
 
@@ -107,6 +108,7 @@ export const Home = () => {
             </div>
           </div>
           <ServiceContent />
+          <ContactContent/>
         </div>
       </div>
     </>
