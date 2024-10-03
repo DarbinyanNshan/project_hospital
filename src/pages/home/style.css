@@ -1,14 +1,13 @@
 .slider-wrapper {
     position: relative;
-    height: 100vh;
     width: 100%;
 }
 
 .home {
-    position: absolute;
+    position: relative;
     top: 100%;
     left: 50%;
-    transform: translate(-50%, -5%);
+    transform: translate(-50%, -3%);
     z-index: 10;
     width: 100%;
     font-family: "Roboto Condensed", sans-serif;
@@ -272,7 +271,6 @@
         padding: 0 1rem;
     }
 }
-
 
 /* //////////////////////////////////////Handle Scroll///////////////////////////////////////////////// */
 .in_view1 {

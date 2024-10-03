@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import { useTranslation } from "react-i18next";
 
-export const Urology= () => {
+export const UroGast= () => {
     const { t } = useTranslation();
 
     return (

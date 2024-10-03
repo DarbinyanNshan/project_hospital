@@ -1,0 +1,21 @@
+.medical{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 2rem;
+}
+.medical-content{
+    display: flex;
+    padding: 1rem 1.5rem;
+    margin:1rem 2rem;
+    position: relative;
+    border: 1px solid red;
+    height: 5rem;
+    width: 25rem;
+}
+
+.medical-content>img{
+    height: 30px;
+    width: 30px;
+}

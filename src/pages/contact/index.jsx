@@ -16,8 +16,8 @@ export const Contact = () => {
                         <h6><span>{t('home')}</span> / {t('contact')}</h6>
                     </div>
                 </div>
-                <ContactContent/>
             </div>
+            <ContactContent/>
         </>
     );
 };

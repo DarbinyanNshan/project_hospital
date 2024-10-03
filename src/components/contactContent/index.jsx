@@ -85,12 +85,12 @@ export const ContactContent = () => {
                 }
             });
         };
-    
+
         window.addEventListener('scroll', handleScroll);
         handleScroll();
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
-    
+
     return (
         <>
             <div className="contact-content">
@@ -134,8 +134,16 @@ export const ContactContent = () => {
                         </div>
                     </div>
 
+
                     <div className="textarea-field">
-                        <textarea name="user_message" cols="30" rows="10" placeholder={t('contact-info.userMessage')} required />
+                        <textarea
+                            name="user_message"
+                            cols="30"
+                            rows="10"
+                            placeholder={t('contact-info.userMessage')}
+                            required
+                        />
+                        <span className="focus"></span>
                     </div>
                     <div>
                         <button type="submit" className="contact-btn">{t('contact-info.send')}</button>
