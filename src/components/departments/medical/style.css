@@ -1,21 +1,153 @@
-.medical{
+.medical {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin: 3rem 2rem;
-}
-.medical-content{
-    display: flex;
-    padding: 1rem 1.5rem;
-    margin:1rem 2rem;
-    position: relative;
-    border: 1px solid red;
-    height: 5rem;
-    width: 25rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.medical-content>img{
-    height: 30px;
-    width: 30px;
+.medical-content {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    margin: 1rem;
+    position: relative;
+    border: 1px solid red;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    height: 5rem;
+    width: 22rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.5s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.medical-content:hover {
+    transform: translateY(-10px);
+    opacity: 0.9;
+}
+
+.medical-content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 4px;
+    background-color: var(--secound-bg-color);
+    transition: all 0.4s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.medical-content:hover::after {
+    width: 100%;
+}
+
+.medical-content:focus {
+    outline: 2px solid var(--secound-bg-color);
+    outline-offset: 2px;
+}
+
+.medical-content>img {
+    height: 50px;
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.medical-content h2 {
+    font-size: 1.2rem;
+    color: var(--title-color);
+    margin: 0;
+}
+
+/* Handle Scroll Animation */
+.medical-content.in_view {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.delay-1 {
+    transition-delay: 0.1s;
+}
+
+.delay-2 {
+    transition-delay: 0.2s;
+}
+
+.delay-3 {
+    transition-delay: 0.3s;
+}
+
+.delay-4 {
+    transition-delay: 0.4s;
+}
+
+.delay-5 {
+    transition-delay: 0.5s;
+}
+
+.delay-6 {
+    transition-delay: 0.6s;
+}
+
+.delay-7 {
+    transition-delay: 0.7s;
+}
+
+.delay-8 {
+    transition-delay: 0.8s;
+}
+
+.delay-9 {
+    transition-delay: 0.9s;
+}
+
+.delay-10 {
+    transition-delay: 1s;
+}
+
+.delay-11 {
+    transition-delay: 1.1s;
+}
+
+.delay-12 {
+    transition-delay: 1.2s;
+}
+
+.delay-13 {
+    transition-delay: 1.3s;
+}
+
+.delay-14 {
+    transition-delay: 1.4s;
+}
+
+.delay-15 {
+    transition-delay: 1.5s;
+}
+
+.delay-16 {
+    transition-delay: 1.6s;
+}
+
+@media screen and (max-width: 768px) {
+    .medical-content {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .medical-content h2 {
+        font-size: 1rem;
+    }
+
+    .medical-content>img {
+        height: 40px;
+        width: 40px;
+    }
 }

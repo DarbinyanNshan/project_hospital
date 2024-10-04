@@ -1,0 +1,76 @@
+.administrative {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.administrative-content {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 1.5rem;
+    margin: 1rem;
+    position: relative;
+    border: 1px solid red;
+    border: none;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    height: 5rem;
+    width: 22rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.administrative-content:hover {
+    transform: translateY(-10px);
+}
+
+.administrative-content::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0; 
+    height: 4px; 
+    background-color: var(--secound-bg-color);
+    transition: all 0.4s ease-in-out; 
+    transform: translateX(-50%); 
+  }
+  
+  .administrative-content:hover::after {
+    width: 100%; 
+  }
+  
+  
+.administrative-content>img {
+    height: 50px;
+    width: 50px;
+    margin-right: 1rem;
+}
+
+.administrative-content h2 {
+    font-size: 1.2rem;
+    color: var(--title-color);
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .administrative-content {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .administrative-content h2 {
+        font-size: 1rem;
+    }
+
+    .administrative-content>img {
+        height: 40px;
+        width: 40px;
+    }
+}

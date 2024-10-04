@@ -13,6 +13,8 @@ import img_3 from "../../assets/images/home/image3.jpg";
 
 import { useNavigate } from "react-router-dom";
 import { ServiceContent } from "../../components/servicesContent";
+import { Medical } from "../../components/departments/medical";
+import { ContactContent } from "../../components/contactContent";
 
 
 
@@ -106,7 +108,11 @@ export const Home = () => {
               <button onClick={onClick}>{t('home_content_button')}</button>
             </div>
           </div>
+          <h2 className="home-title">{t('services')}</h2>
           <ServiceContent />
+          <h2 className="home-title">{t('departments')}</h2>
+          <Medical/>
+        <ContactContent/>
         </div>
       </div>
     </>

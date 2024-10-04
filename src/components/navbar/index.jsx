@@ -34,7 +34,7 @@ export const NavBar = () => {
     useEffect(() => {
         const handleClickOutside = (event) => {
             if (navRef.current && !navRef.current.contains(event.target)) {
-                setIsOpen(false); 
+                setIsOpen(false);
             }
         };
 
@@ -96,7 +96,7 @@ export const NavBar = () => {
                             {t('departments')}<FaCaretDown />
                         </p>
                         <div className="dropdown-content">
-                            <NavLink to="/departments" onClick={() => { setIsOpen(false); scrollToTop(); }}>{t('departments1')}</NavLink>
+                            <NavLink to="/departments/medical" onClick={() => { setIsOpen(false); scrollToTop(); }}>{t('medical')}</NavLink>
                             <NavLink to="/departments/administrative" onClick={() => { setIsOpen(false); scrollToTop(); }}>{t('administrative')}</NavLink>
                         </div>
                     </div>

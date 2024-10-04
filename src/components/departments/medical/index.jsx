@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
 import { useTranslation } from "react-i18next";
@@ -117,6 +117,23 @@ export const Medical = () => {
             behavior: "smooth"
         });
     };
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const elements = document.querySelectorAll('.medical-content');
+            elements.forEach((e, index) => {
+                const rect = e.getBoundingClientRect();
+                if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                    e.classList.add('in_view', `delay-${index + 1}`);
+                }
+            });
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll(); 
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
         <div className="medical">

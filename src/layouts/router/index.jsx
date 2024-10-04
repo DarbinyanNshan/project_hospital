@@ -13,7 +13,6 @@ import { Administrative } from "../../components/departments/administrative";
 import { Footer } from "../../components/footer";
 import { NotFound } from "../../pages/notFound";
 import { Terapevt } from "../../components/departments/medical-pages/terapevt";
-import { Medical } from "../../components/departments/medical";
 import { Cancer } from "../../components/departments/medical-pages/cancer";
 import { Cardiology } from "../../components/departments/medical-pages/cardiology";
 import { Dermatology } from "../../components/departments/medical-pages/dermatology";
@@ -28,6 +27,7 @@ import { Therapy } from "../../components/departments/medical-pages/therapy";
 import { Otorhinolaryngology } from "../../components/departments/medical-pages/otorhinolaryngology";
 import { Epidemiology } from "../../components/departments/medical-pages/epidemiology";
 import { SurTra } from "../../components/departments/medical-pages/surTra";
+import { Assurance } from "../../components/departments/administrative-pages/assurance";
 
 
 
@@ -44,11 +44,10 @@ export const Router = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/doctors" element={<Doctors />} />
-                    <Route path="/departments" element={<Departments />} />
                     <Route path="/services" element={<Service />} />
                     <Route path="/contact" element={<Contact />} />
                     <Route path="/departments/administrative" element={<Administrative />} />
-                    <Route path="/departments/medical" element={<Medical />} />
+                    <Route path="/departments/medical" element={<Departments />} />
                     <Route path="/departments/medical/terapevt" element={<Terapevt />} />
                     <Route path="/departments/medical/cancer" element={<Cancer />} />
                     <Route path="/departments/medical/cardiology" element={<Cardiology />} />
@@ -64,10 +63,11 @@ export const Router = () => {
                     <Route path="/departments/medical/otorhinolaryngology" element={<Otorhinolaryngology/>} />
                     <Route path="/departments/medical/epidemiology" element={<Epidemiology/>} />
                     <Route path="/departments/medical/surTra" element={<SurTra/>} />
+                    <Route path="/departments/administrative/assurance" element={<Assurance/>} />
                     <Route path="*" element={<NotFound />} />
                 </Routes>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }

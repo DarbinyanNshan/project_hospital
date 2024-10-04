@@ -8,7 +8,8 @@ export const Service = () => {
     const { t } = useTranslation();
 
     return (
-        <>        <div className="services">
+        <>        
+        <div className="services">
             <div className="services-img">
                 <div className="services-text">
                     <h1>{t('services')}</h1>

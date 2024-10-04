@@ -12,7 +12,7 @@ export const Departments = () => {
                 <div className="departments-img">
                     <div className="departments-text">
                         <h1>{t('departments')}</h1>
-                        <h6><span>{t('home')}</span> / {t('departments1')}</h6>
+                        <h6><span>{t('home')}</span> / {t('medical')}</h6>
                     </div>
                 </div>
             </div>

@@ -21,6 +21,10 @@
     justify-content: center;
     z-index: 10;
     width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
 }
 
 .homeOne>div {
@@ -29,8 +33,15 @@
     height: 320px;
     background-color: var(--main-color);
     padding: 45px 35px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
+
 
 .homeOne>div:hover {
     transform: translateY(-20px);
@@ -155,16 +166,24 @@
 
 }
 
+/* /////////////////////////////////////////////////////// */
+.home-title {
+    text-align: center;
+    color: var(--title-color);
+}
+
+/* //////////////////////////////////////////////////////////////// */
 @media (max-width: 1250px) {
     .homeOne>div {
         width: 280px;
         padding: 30px 25px;
         margin: 1rem 2rem;
     }
-     
-    .homeOne>div h3{
+
+    .homeOne>div h3 {
         font-size: 1.5rem;
     }
+
     .image-section {
         display: flex;
         flex-wrap: wrap;
